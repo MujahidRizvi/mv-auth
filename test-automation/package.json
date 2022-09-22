@@ -1,0 +1,25 @@
+{
+  "name": "mv_auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MujahidRizvi/MV_Auth.git"
+  },
+  "author": "Mujahid Rizvi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MujahidRizvi/MV_Auth/issues"
+  },
+  "homepage": "https://github.com/MujahidRizvi/MV_Auth#readme",
+  "devDependencies": {
+    "cypress": "^10.4.0"
+  },
+  "dependencies": {
+    "typescript": "^4.7.4"
+  }
+}

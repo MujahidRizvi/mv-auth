@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mv-auth-dev-service
+  namespace: wrld3d
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mv-auth-dev-service
+  template:
+    metadata:
+      labels:
+        app: mv-auth-dev-service
+    spec:
+      containers:
+        - name: mv-auth-dev-service
+          image: <IMAGE>
+          envFrom:
+            - configMapRef:
+                name: mv-auth-dev-config
+          ports:
+            - containerPort: 8100

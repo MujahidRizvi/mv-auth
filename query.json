@@ -1,0 +1,3 @@
+{ 
+    "userByProviderTypeAndKey": "SELECT u.id \"userId\",u.\"ipfsHash\", p.\"providerKey\" FROM mv_auth_mgmt.user_accounts u INNER JOIN mv_auth_mgmt.provider_accounts p ON p.\"userAccountId\" = u.id AND p.\"providerType\"='${providerType}' AND p.\"providerKey\"='${providerKey}'"
+}
