@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mv-auth-pod
+  namespace: wrld3d
+spec:
+  containers:
+    - name: mv-auth-service
+      image: <IMAGE>
+      envFrom:
+      - configMapRef:
+          name: mv-auth-config
